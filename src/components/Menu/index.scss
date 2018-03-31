@@ -1,0 +1,25 @@
+@import '../../assets/scss/variable';
+.resume-menu {
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  line-height: 40px;
+  box-shadow: 2px 2px 1px 1px rgba(34, 34, 34, .3);
+  // justify-content: flex-end;
+  ul {
+    display: flex;
+    flex: 0 1 80%;
+    justify-content: flex-end;
+    padding: 0 15px;
+  }
+  .resume-menu__item {
+    a {
+      padding: 15px;
+      color: #282828;
+      transition: all .5s ease;
+      &:hover {
+        color: #68c3a3;
+      }
+    } 
+  }
+}

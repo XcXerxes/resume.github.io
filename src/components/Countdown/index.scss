@@ -1,0 +1,38 @@
+.resume-countdown {
+  background: url('../../assets/images/home2.jpg') no-repeat center center;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+  padding: 40px 0;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(26, 30, 35, .85);
+  }
+  .resume-container {
+    position: relative;
+  }
+  ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  .resume-countdown__item {
+    flex: 1;
+    text-align: center;
+    i {
+      font-size: 40px;
+    }
+    h4 {
+      font-size: 40px;
+      line-height: 70px;
+    }
+    span {
+      font-size: 28px;
+    }
+  }
+}

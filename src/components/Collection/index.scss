@@ -1,0 +1,91 @@
+.collection-tabs__content {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 0 0;
+}
+.tabs-content__item {
+  flex: 0 1 24%;
+  margin: 10px;
+  border: 1px solid #eee;
+  min-height: 180px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  &:hover {
+    .tabs-content__item-body {
+      background-color: rgba(0, 0, 0, .7);
+      .tabs-body__btns {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      h4 {
+        transform: translateY(0);
+      }
+    }
+  }
+  .tabs-content__item-media {
+    // background-color: #e2f000;
+    height: 100%;
+  }
+  .tabs-content__item-body {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0);
+    transition: all .4s ease;
+    .tabs-body__btns {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transform: translateY(-30px);
+      opacity: 0;
+      transition: all .4s ease;
+      a {
+        // display: inline-flex;
+        position: relative;
+        margin: 0 20px;
+        // overflow: hidden;
+        i {
+          font-size: 18px;
+          color: #68c3a3;
+          position: relative;
+          transition: all .4s ease;
+          &::after {
+            content: '';
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            left: -7px;
+            top: -7px;
+            border: 1px solid #68c3a3;
+            border-radius: 3px;
+            transform: rotate(45deg);
+            transition: all .4s ease;
+            z-index: -1;
+          }
+        }
+        &:hover {
+          i {
+            color: #fff;
+            &::after {
+              background-color: #68c3a3;
+            }
+          }
+        }
+      }
+    }
+    h4 {
+      line-height: 45px;
+      background-color: #68c3a3;
+      color: #fff;
+      text-align: center;
+      transition: all .4s ease;
+      transform: translateY(45px);
+    }
+  }
+}

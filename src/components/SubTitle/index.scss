@@ -1,0 +1,21 @@
+@import '../../assets/scss/variable';
+
+.section-title {
+  margin-bottom: 80px;
+  text-align: center;
+  font-size: 50px;
+  color: $subtitle_color;
+  position: relative;
+  text-transform: uppercase;
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: url('../../assets/images/section-divider.png') no-repeat;
+    height: 15px;
+    width: 113px;
+    margin: 0 auto;
+    bottom: -40px;
+  }
+}
